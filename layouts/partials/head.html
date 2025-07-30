@@ -12,6 +12,7 @@
             {{- print .Title " - " .Site.Title -}}
         {{- end -}}
     </title>
+    <link rel="canonical" href="{{ .Permalink }}" />
 
     {{ with .Description }}
     <meta name="description" content="{{ . }}" />
